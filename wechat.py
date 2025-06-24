@@ -56,7 +56,8 @@ def make_key(pkt):
     return (pkt.src_addr, pkt.src_port, pkt.dst_addr, pkt.dst_port)
 
 def extract_answers(html: str):
-    return re.findall(r'<div class="option-item active">\s*(.*?)\s*</div>', html, re.S)
+    return re.findall(r'<div class="option-item[^"]*\bactive\b[^"]*">\s*(.*?)\s*</div>', html, re.S)
+
 
 FILTER = "tcp.DstPort == 80 or tcp.SrcPort == 80"
 print(f">> 过滤 HTTP/80 流量：{FILTER}，Ctrl+C 停止…")
