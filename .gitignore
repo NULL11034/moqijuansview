@@ -1,0 +1,7 @@
+# Debug
+debug/
+*.html 
+
+# Build
+*.build/
+*.dist/
