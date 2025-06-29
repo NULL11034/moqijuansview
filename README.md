@@ -26,7 +26,7 @@
 
 7. 按 `Ctrl+C` 停止程序。
 
-    ![Screenshot 2025-05-20 234920](https://github.com/user-attachments/assets/1fe43b59-a782-4174-a99e-68899166d065)
+    ![d3a7e38f-78c4-4ef9-9579-109df177116c](https://github.com/user-attachments/assets/751bd60f-67db-4d4d-9441-826a06527032)
 
 ## 注意事项
 
