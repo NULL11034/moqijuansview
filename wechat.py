@@ -53,6 +53,11 @@ def dechunk(body: bytes) -> bytes:
 
 DEBUG = "--debug" in sys.argv
 
+if DEBUG:
+    print("=" * 60)
+    print("[调试模式已启动] 将保存所有解压后的 HTML 和响应头到 debug/ 文件夹。")
+    print("=" * 60)
+
 req_buf = {}
 resp_buf = {}
 
