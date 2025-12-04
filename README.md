@@ -15,7 +15,7 @@
 
 2. 在电脑上的朋友圈等来源打开默契局宣传图片并点击上方的提取二维码进入默契局页面。
 
-3. 双击运行 `moqijux64.exe`或`moqijux86.exe` ，程序会提示 UAC 提权。
+3. 双击运行 `wechat.exe` ，程序会提示 UAC 提权。
 
 4. 完成提权后，开始拦截 HTTP/80 流量。
 
@@ -68,13 +68,6 @@
     sudo python ./wechat.py --debug
     ```
 
-### 构建
-
-```bash
-pip install -U nuitka
-
-python -m nuitka --lto=no --onefile --standalone --include-module=pydivert wechat.py
-```
 
 ## 许可证
 
